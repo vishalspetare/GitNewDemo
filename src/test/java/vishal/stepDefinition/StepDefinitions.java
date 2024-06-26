@@ -4,6 +4,7 @@ import io.cucumber.java.en.Given;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.cucumber.java.en.When;
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 import io.cucumber.java.en.Then;
 import static org.junit.Assert.assertEquals;
 
@@ -25,6 +26,9 @@ public class StepDefinitions {
         WebDriver driver=new ChromeDriver();
         
         driver.get("https://www.google.com/");
+        
+        System.out.println("This is GitDemo User");
+        
         driver.close();
         
         
