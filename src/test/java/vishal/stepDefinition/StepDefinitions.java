@@ -31,6 +31,11 @@ public class StepDefinitions {
         
         System.out.println("This is changed by gitsStuff user");
         
+        
+        
+        System.out.println("This is GitDemo User1");
+        System.out.println("This is GitDemo User2");
+        System.out.println("This is GitDemo User3");
         driver.close();
         
         
@@ -39,10 +44,12 @@ public class StepDefinitions {
     @When("I add them")
     public void i_add_them() {
         this.result = num1 + num2;
+        System.out.println("This is GitDemo User4");
     }
 
     @Then("the result should be {int}")
     public void the_result_should_be(int expectedResult) {
         assertEquals(expectedResult, result);
+        System.out.println("This is GitDemo User5");
     }
 }
