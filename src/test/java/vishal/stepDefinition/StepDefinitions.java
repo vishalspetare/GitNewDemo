@@ -51,5 +51,6 @@ public class StepDefinitions {
     public void the_result_should_be(int expectedResult) {
         assertEquals(expectedResult, result);
         System.out.println("This is GitDemo User5");
+        System.out.println("This is GitDemo User6 ");
     }
 }
